@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .label {
+    @apply mb-2 block text-sm font-medium leading-6 text-gray-600;
+  }
+
+  .form-control {
+    @apply flex w-full rounded-lg border-0 bg-transparent px-4 py-3.5 text-sm shadow-sm ring-1 ring-inset ring-gray-300 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2  disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .form-error {
+    @apply ring-destructive focus:ring-destructive;
+  }
+
+  .error-msg {
+    @apply text-sm text-destructive;
+  }
+
+  .page-heading {
+    @apply text-base font-extrabold leading-6 text-gray-900 sm:text-2xl;
+  }
+
+  .icon-default {
+    @apply h-6 w-6;
+  }
+  .icon-sm {
+    @apply h-5 w-5;
+  }
+}
